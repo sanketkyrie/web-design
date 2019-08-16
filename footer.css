@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+* {
+    font-family: 'Righteous', cursive;
+}
+
+html {
+    background-image: url(retro2.jpg);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+
+.body p {
+    color: white;
+    font-size: 25px;
+    margin-left: 23px;
+}
+
+.heading a {
+    text-decoration: none;
+    font-size: 55px;
+    color: white;
+    margin-left: 750px;
+}
+
+.heading {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.heading a:hover {
+    background-color: transparent;
+    color: #ff00ea;
+    transform: scale(1.2);
+}
+
+
+/*_footer_*/
+
+.social-footer div {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-footer {
+    margin-top: 100px;
+    float: right;
+}
+
+.social-footer a {
+    text-align: center;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: transparent;
+    padding: 0;
+    margin-right: 35px;
+    margin-top: -20px;
+    border-radius: 50%;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+}
+
+.social-footer a:hover {
+    box-shadow: 0 0 24px 0 #ff00ea;
+}
+
+.social-footer a::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #ff00ea;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.social-footer i {
+    margin-top: 20px;
+    color: #ff00ea;
+    font-size: 50px;
+}
+
+.social-footer:hover i {
+    transform: scale(1.1);
+    color: white;
+}
+
+.social-footer a:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+.heading2 {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .social-footer a {
+        width: 43px;
+        height: 44px;
+        margin: 0;
+    }
+    .social-footer {
+        margin-top: 4px;
+        margin-right: 65px;
+    }
+    .social-footer i {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    html {
+        background: url(retro2.jpg) no-repeat center center fixed;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-blend-mode: multiply;
+    }
+    .heading2 {
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+    .heading2 a {
+        margin-top: 1px;
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+        font-size: 40px;
+    }
+    .heading2 a:hover {
+        color: #ff00ea;
+    }
+    .heading {
+        display: none;
+    }
+    .body p {
+        color: white;
+        font-size: 15px;
+    }
+}

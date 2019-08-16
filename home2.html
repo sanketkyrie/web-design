@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="slide.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="nav-style.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <div class="heading2"><a href="home2.html">NEBULAE 2K19</a></div>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#news">Contact Us</a>
+        <a href="#contact">About</a>
+        <a href="home2.html">Home</a>
+        <div class="heading"><a href="#">NEBULAE 2K19</a></div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <p class="overlay-menu">Gallary:</p>
+            <a href="gallery.html">*First Year Members</a>
+            <a href="#">*Second Year Members</a>
+            <p class="overlay-menu">Form:</p>
+            <a href="https://forms.gle/xENeCWCfnxEs3fx77">*CR Form</a>
+            <a href="#">*Mr and Mrs ETC</a>
+        </div>
+    </div>
+    <span class="nav-bar" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "50%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    <section class="body">
+        <p>Click here for Gallary and Form </p>
+    </section>
+    <div class="slider">
+        <p class="slide-head">IT'S FRESHERS' TIME ! !</p>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <p class="slide-text slide-text1"> WELCOME FRESHERS 2K19</p>
+            </div>
+            <div class="mySlides adventure">
+                <p class="slide-text slide-line2">ADVENTURES AWAIT !</p>
+            </div>
+            <div class="mySlides last">
+                <p class="slide-text slide-line3"> LET THE FUN BEGIN !</p>
+            </div>
+        </div>
+        <br/>
+        <p class="slide-footer footer-welcome"> ETC FAMILY WELCOMES</p>
+        <br>
+        <p class="slide-footer footer-you"> YOU ! !</p>
+    </div>
+
+    <div class="dot-container">
+        <span class="dot" onclick='currentSlide(1)'></span>
+        <span class="dot" onclick='currentSlide(2)'></span>
+        <span class="dot" onclick='currentSlide(3)'></span>
+    </div>
+    </div>
+    <footer>
+        <ul>
+            <div class="social-footer">
+                <a href="#">
+                    <i class="fab fa-github git"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-youtube youtube"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram insta"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter twit"></i>
+                </a>
+            </div>
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+* {
+    font-family: 'Righteous', cursive;
+}
+
+body {
+    background-image: url(retro2.jpg);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.heading {
+    text-decoration: none;
+    margin-left: 42%;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+}
+
+header {
+    padding: 2px;
+}
+
+.heading:hover {
+    color: #ff00ea;
+    font-size: 47px;
+}
+
+
+/*_footer_*/
+
+.social-footer div {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-footer {
+    margin-top: 120px;
+    float: right;
+}
+
+.social1 {
+    width: 100px;
+    height: 50px;
+    background-color: #ff00ea;
+    -webkit-mask: url(icons/git.svg) no-repeat center;
+    mask: url(icons/git.svg) no-repeat center;
+}
+
+.social2 {
+    width: 100px;
+    height: 50px;
+    background-color: #ff00ea;
+    -webkit-mask: url(icons/youtube.svg) no-repeat center;
+    mask: url(icons/youtube.svg) no-repeat center;
+}
+
+.social3 {
+    width: 100px;
+    height: 50px;
+    background-color: #ff00ea;
+    -webkit-mask: url(icons/insta.svg) no-repeat center;
+    mask: url(icons/insta.svg) no-repeat center;
+}
+
+.social4 {
+    width: 100px;
+    height: 50px;
+    background-color: #ff00ea;
+    -webkit-mask: url(icons/twit.svg) no-repeat center;
+    mask: url(icons/twit.svg) no-repeat center;
+}
+
+header {
+    padding: 0;
+    text-align: center;
+}
+
+.heading {
+    margin-left: 5%;
+    text-align: center;
+}
+
+.social-footer a {
+    text-align: center;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: transparent;
+    padding: 0;
+    margin-right: 35px;
+    margin-top: -20px;
+    border-radius: 50%;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+}
+
+.social-footer a:hover {
+    box-shadow: 0 0 24px 0 #00ACED;
+}
+
+.social-footer a .social1:hover {
+    background-color: white;
+}
+
+.social-footer a .social2:hover {
+    background-color: white;
+}
+
+.social-footer a .social3:hover {
+    background-color: white;
+}
+
+.social-footer a .social4:hover {
+    background-color: white;
+}
+
+.social-footer a::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.social1,
+.social2,
+.social3,
+.social4 {
+    margin-top: 15px;
+}
+
+.social-footer a:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .social1,
+    .social2,
+    .social3,
+    .social4 {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 5px;
+        left: 50%;
+    }
+    .social-footer a {
+        width: 43px;
+        height: 44px;
+        margin: 0;
+    }
+    .social-footer .social4 {
+        margin-right: 20px;
+    }
+    .social-footer {
+        margin-top: 20px;
+        margin-right: 65px;
+    }
+}

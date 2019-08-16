@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+.slideshow-container {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.mySlides {
+    padding: 0;
+    margin: 0;
+    height: 100px;
+}
+
+.dot-container {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.slide-footer {
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    padding: 0;
+}
+
+.slide-head {
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+    transform: scale(1.5);
+    background-color: #26f6fd
+}
+
+.slider {
+    margin-top: 70px;
+    padding: 0;
+}
+
+.slide-text {
+    padding: 0;
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    font-size: 80px;
+    color: white;
+}
+
+.footer-you {
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-welcome {
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .slide-text {
+        padding: 0;
+        margin: 0;
+        font-family: 'Righteous', cursive;
+        font-size: 40px;
+    }
+    .slide-line2 {
+        font-size: 43px;
+    }
+    .slide-line3 {
+        font-size: 45px;
+    }
+    .slide-head {
+        font-size: 25px;
+        margin: 0;
+    }
+    .slide-footer {
+        font-size: 25px;
+        line-height: 8px;
+    }
+    .slider {
+        padding: 0;
+        margin-top: 40px;
+    }
+}
